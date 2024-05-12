@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Form from './Form'
 
 const Counter = () => {
     const [signedIn, setSignedIn] = useState(false)
@@ -25,6 +26,8 @@ const Counter = () => {
                     <p>Welcome Back!</p>
 
                     <button type='button' onClick={increamentCounter}> You clicked {count} times.</button>
+
+                    <Form/>
 
                 </div>) : (
                     <div>
